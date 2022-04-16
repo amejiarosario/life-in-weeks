@@ -1,0 +1,50 @@
+.App {
+  font-family: sans-serif;
+  /* text-align: center; */
+}
+
+.box {
+  border: 1px solid black;
+  height: 5px;
+  width: 5px;
+  margin: 0.5px 1.5px;
+}
+
+.year-number {
+  font-size: 7px;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.LifeWeeks-Container {
+  display: flex;
+  flex-direction: row;
+}
+
+.YearWeeks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* not working */
+.year-number:nth-child(3) {
+  color: red;
+  position: relative;
+  bottom: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .year-number {
+    margin: 0 2px;
+    min-width: 10px;
+  }
+  .LifeWeeks-Container {
+    flex-direction: column;
+  }
+
+  .YearWeeks {
+    flex-direction: row;
+  }
+}
